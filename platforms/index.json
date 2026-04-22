@@ -681,13 +681,6 @@
       "revisionNumber": 1
     },
     {
-      "filename": "Steam.json",
-      "platformName": "Steam",
-      "platformShortname": "steam",
-      "platformUniqueId": "steam",
-      "revisionNumber": 3
-    },
-    {
       "filename": "SuperCassetteVision.json",
       "platformName": "Super Cassette Vision",
       "platformShortname": "supercassette",
@@ -804,7 +797,7 @@
       "platformName": "Windows",
       "platformShortname": "windows",
       "platformUniqueId": "windows",
-      "revisionNumber": 7
+      "revisionNumber": 8
     },
     {
       "filename": "WonderSwan.json",

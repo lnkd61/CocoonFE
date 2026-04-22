@@ -1,6 +1,6 @@
 {
   "databaseVersion": 14,
-  "revisionNumber": 7,
+  "revisionNumber": 8,
   "platform": {
     "name": "Windows",
     "uniqueId": "windows",
@@ -18,7 +18,81 @@
     "useCustomScreenAspectRatio": false,
     "customScreenAspectRatio": null,
     "retroAchievementsAlias": null,
-    "extra": ""
+    "extra": {
+      "folderAliases": [
+        "pc",
+        "steam"
+      ],
+      "pcStorefronts": {
+        "defaultPlayerCategories": [
+          {
+            "id": "steam",
+            "title": "Steam default app",
+            "subtitle": "Used for .steam and .steamappid files",
+            "sourceIds": [
+              "steam"
+            ]
+          },
+          {
+            "id": "local",
+            "title": "Local default app",
+            "subtitle": "Used for .pcgame and legacy local ID files",
+            "sourceIds": [
+              "local"
+            ]
+          }
+        ],
+        "sources": [
+          {
+            "id": "steam",
+            "extensions": [
+              "steam",
+              "steamappid"
+            ],
+            "legacyTags": [
+              "steamappid"
+            ],
+            "gameSource": "STEAM",
+            "defaultPlayerCategory": "steam"
+          },
+          {
+            "id": "local",
+            "extensions": [
+              "pcgame",
+              "localappid",
+              "localgameid"
+            ],
+            "legacyTags": [
+              "localappid",
+              "localgameid"
+            ],
+            "gameSource": "PCGAME",
+            "defaultPlayerCategory": "local"
+          },
+          {
+            "id": "gog",
+            "extensions": [
+              "gog"
+            ],
+            "gameSource": "GOG"
+          },
+          {
+            "id": "epic",
+            "extensions": [
+              "epic"
+            ],
+            "gameSource": "EPIC"
+          },
+          {
+            "id": "amazon",
+            "extensions": [
+              "amazon"
+            ],
+            "gameSource": "AMAZON"
+          }
+        ]
+      }
+    }
   },
   "playerList": [
     {
@@ -62,11 +136,61 @@
       "extra": ""
     },
     {
+      "name": "GameHub Lite (Steam)",
+      "uniqueId": "windows.gamehub.lite.steam",
+      "description": "Supported extensions: steamappid, steam",
+      "acceptedFilenameRegex": "^(.*)\\.(?:steamappid|steam)$",
+      "amStartArguments": "-a gamehub.lite.LAUNCH_GAME\n -n gamehub.lite/com.xj.landscape.launcher.ui.gamedetail.GameDetailActivity\n --es steamAppId {tags.app_id}\n --ez autoStartGame true",
+      "killPackageProcesses": false,
+      "killPackageProcessesWarning": false,
+      "extra": ""
+    },
+    {
+      "name": "GameHub Lite RC (Steam)",
+      "uniqueId": "windows.gamehub.lite.rc.steam",
+      "description": "Supported extensions: steamappid, steam",
+      "acceptedFilenameRegex": "^(.*)\\.(?:steamappid|steam)$",
+      "amStartArguments": "-a emuready.gamehub.lite.LAUNCH_GAME\n -n emuready.gamehub.lite/com.xj.landscape.launcher.ui.gamedetail.GameDetailActivity\n --es steamAppId {tags.app_id}\n --ez autoStartGame true",
+      "killPackageProcesses": false,
+      "killPackageProcessesWarning": false,
+      "extra": ""
+    },
+    {
+      "name": "GameHub Lite (Steam - Antutu)",
+      "uniqueId": "windows.gamehub.lite.steam.antutu",
+      "description": "Supported extensions: steamappid, steam",
+      "acceptedFilenameRegex": "^(.*)\\.(?:steamappid|steam)$",
+      "amStartArguments": "-a gamehub.lite.LAUNCH_GAME\n -n com.antutu.ABenchMark/com.xj.landscape.launcher.ui.gamedetail.GameDetailActivity\n --es steamAppId {tags.app_id}\n --ez autoStartGame true",
+      "killPackageProcesses": false,
+      "killPackageProcessesWarning": false,
+      "extra": ""
+    },
+    {
+      "name": "GameHub Lite (Steam - PUBG)",
+      "uniqueId": "windows.gamehub.lite.steam.pubg",
+      "description": "Supported extensions: steamappid, steam",
+      "acceptedFilenameRegex": "^(.*)\\.(?:steamappid|steam)$",
+      "amStartArguments": "-a gamehub.lite.LAUNCH_GAME\n -n com.tencent.ig/com.xj.landscape.launcher.ui.gamedetail.GameDetailActivity\n --es steamAppId {tags.app_id}\n --ez autoStartGame true",
+      "killPackageProcesses": false,
+      "killPackageProcessesWarning": false,
+      "extra": ""
+    },
+    {
+      "name": "GameHub Lite (Steam - Ludashi)",
+      "uniqueId": "windows.gamehub.lite.steam.ludashi",
+      "description": "Supported extensions: steamappid, steam",
+      "acceptedFilenameRegex": "^(.*)\\.(?:steamappid|steam)$",
+      "amStartArguments": "-a gamehub.lite.LAUNCH_GAME\n -n com.ludashi.aibench/com.xj.landscape.launcher.ui.gamedetail.GameDetailActivity\n --es steamAppId {tags.app_id}\n --ez autoStartGame true",
+      "killPackageProcesses": false,
+      "killPackageProcessesWarning": false,
+      "extra": ""
+    },
+    {
       "name": "GameHub Lite (Local Games)",
       "uniqueId": "windows.gamehub.lite.local",
-      "description": "Supported extensions: localgameid",
-      "acceptedFilenameRegex": "^(.*)\\.(?:localgameid)$",
-      "amStartArguments": "-a gamehub.lite.LAUNCH_GAME\n -n gamehub.lite/com.xj.landscape.launcher.ui.gamedetail.GameDetailActivity\n --es localGameId {tags.localgameid}\n --ez autoStartGame true",
+      "description": "Supported extensions: localgameid, localappid, pcgame",
+      "acceptedFilenameRegex": "^(.*)\\.(?:localgameid|localappid|pcgame)$",
+      "amStartArguments": "-a gamehub.lite.LAUNCH_GAME\n -n gamehub.lite/com.xj.landscape.launcher.ui.gamedetail.GameDetailActivity\n --es localGameId {tags.app_id}\n --ez autoStartGame true",
       "killPackageProcesses": true,
       "killPackageProcessesWarning": true,
       "extra": ""
@@ -74,9 +198,9 @@
     {
       "name": "GameHub Lite (Local Games - Antutu)",
       "uniqueId": "windows.gamehub.lite.local.antutu",
-      "description": "Supported extensions: localgameid",
-      "acceptedFilenameRegex": "^(.*)\\.(?:localgameid)$",
-      "amStartArguments": "-a gamehub.lite.LAUNCH_GAME\n -n com.antutu.ABenchMark/com.xj.landscape.launcher.ui.gamedetail.GameDetailActivity\n --es localGameId {tags.localgameid}\n --ez autoStartGame true",
+      "description": "Supported extensions: localgameid, localappid, pcgame",
+      "acceptedFilenameRegex": "^(.*)\\.(?:localgameid|localappid|pcgame)$",
+      "amStartArguments": "-a gamehub.lite.LAUNCH_GAME\n -n com.antutu.ABenchMark/com.xj.landscape.launcher.ui.gamedetail.GameDetailActivity\n --es localGameId {tags.app_id}\n --ez autoStartGame true",
       "killPackageProcesses": true,
       "killPackageProcessesWarning": true,
       "extra": ""
@@ -84,9 +208,9 @@
     {
       "name": "GameHub Lite (Local Games - PUBG)",
       "uniqueId": "windows.gamehub.lite.local.pubg",
-      "description": "Supported extensions: localgameid",
-      "acceptedFilenameRegex": "^(.*)\\.(?:localgameid)$",
-      "amStartArguments": "-a gamehub.lite.LAUNCH_GAME\n -n com.tencent.ig/com.xj.landscape.launcher.ui.gamedetail.GameDetailActivity\n --es localGameId {tags.localgameid}\n --ez autoStartGame true",
+      "description": "Supported extensions: localgameid, localappid, pcgame",
+      "acceptedFilenameRegex": "^(.*)\\.(?:localgameid|localappid|pcgame)$",
+      "amStartArguments": "-a gamehub.lite.LAUNCH_GAME\n -n com.tencent.ig/com.xj.landscape.launcher.ui.gamedetail.GameDetailActivity\n --es localGameId {tags.app_id}\n --ez autoStartGame true",
       "killPackageProcesses": true,
       "killPackageProcessesWarning": true,
       "extra": ""
@@ -94,11 +218,21 @@
     {
       "name": "GameHub Lite (Local Games - Ludashi)",
       "uniqueId": "windows.gamehub.lite.ludashi",
-      "description": "Supported extensions: localgameid",
-      "acceptedFilenameRegex": "^(.*)\\.(?:localgameid)$",
-      "amStartArguments": "-a gamehub.lite.LAUNCH_GAME\n -n com.ludashi.aibench/com.xj.landscape.launcher.ui.gamedetail.GameDetailActivity\n --es localGameId {tags.localgameid}\n --ez autoStartGame true",
+      "description": "Supported extensions: localgameid, localappid, pcgame",
+      "acceptedFilenameRegex": "^(.*)\\.(?:localgameid|localappid|pcgame)$",
+      "amStartArguments": "-a gamehub.lite.LAUNCH_GAME\n -n com.ludashi.aibench/com.xj.landscape.launcher.ui.gamedetail.GameDetailActivity\n --es localGameId {tags.app_id}\n --ez autoStartGame true",
       "killPackageProcesses": true,
       "killPackageProcessesWarning": true,
+      "extra": ""
+    },
+    {
+      "name": "GameNative",
+      "uniqueId": "windows.app.gamenative",
+      "description": "Supported extensions: steam, steamappid, pcgame, localappid, localgameid, gog, epic, amazon",
+      "acceptedFilenameRegex": "^(.*)\\.(?:steam|steamappid|pcgame|localappid|localgameid|gog|epic|amazon)$",
+      "amStartArguments": "-a app.gamenative.LAUNCH_GAME\n -n app.gamenative/.MainActivity\n --ei app_id {tags.app_id}\n --es game_source {tags.game_source}",
+      "killPackageProcesses": false,
+      "killPackageProcessesWarning": false,
       "extra": ""
     }
   ]
