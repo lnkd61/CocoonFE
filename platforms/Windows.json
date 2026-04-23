@@ -1,6 +1,6 @@
 {
   "databaseVersion": 14,
-  "revisionNumber": 8,
+  "revisionNumber": 9,
   "platform": {
     "name": "Windows",
     "uniqueId": "windows",
@@ -66,7 +66,7 @@
               "localappid",
               "localgameid"
             ],
-            "gameSource": "PCGAME",
+            "gameSource": "CUSTOM_GAME",
             "defaultPlayerCategory": "local"
           },
           {
