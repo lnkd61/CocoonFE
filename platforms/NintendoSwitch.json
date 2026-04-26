@@ -49,7 +49,9 @@
       "amStartArguments": "-n dev.eden.eden_emulator/org.yuzu.yuzu_emu.activities.EmulationActivity\n  -a android.nfc.action.TECH_DISCOVERED\n  -d {file.uri}",
       "killPackageProcesses": false,
       "killPackageProcessesWarning": false,
-      "extra": ""
+      "extra": {
+        "cantResume": true
+      }
     },
     {
       "name": "Eden (Legacy)",
@@ -59,7 +61,9 @@
       "amStartArguments": "-n dev.legacy.eden_emulator/org.yuzu.yuzu_emu.activities.EmulationActivity\n  -a android.nfc.action.TECH_DISCOVERED\n  -d {file.uri}",
       "killPackageProcesses": false,
       "killPackageProcessesWarning": false,
-      "extra": ""
+      "extra": {
+        "cantResume": true
+      }
     },
     {
       "name": "Eden (Optimized)",
@@ -69,7 +73,9 @@
       "amStartArguments": "-n com.miHoYo.Yuanshen/org.yuzu.yuzu_emu.activities.EmulationActivity\n  -a android.nfc.action.TECH_DISCOVERED\n  -d {file.uri}",
       "killPackageProcesses": false,
       "killPackageProcessesWarning": false,
-      "extra": ""
+      "extra": {
+        "cantResume": true
+      }
     },
     {
       "name": "Eden Nightly",
@@ -79,7 +85,9 @@
       "amStartArguments": "-n dev.eden.eden_emulator.nightly/org.yuzu.yuzu_emu.activities.EmulationActivity\n  -a android.nfc.action.TECH_DISCOVERED\n  -d {file.uri}",
       "killPackageProcesses": false,
       "killPackageProcessesWarning": false,
-      "extra": ""
+      "extra": {
+        "cantResume": true
+      }
     },
     {
       "name": "Eden Nightly (Legacy)",
@@ -89,7 +97,9 @@
       "amStartArguments": "-n dev.legacy.eden_emulator.nightly/org.yuzu.yuzu_emu.activities.EmulationActivity\n  -a android.nfc.action.TECH_DISCOVERED\n  -d {file.uri}",
       "killPackageProcesses": false,
       "killPackageProcessesWarning": false,
-      "extra": ""
+      "extra": {
+        "cantResume": true
+      }
     },
     {
       "name": "Eden Nightly (Optimized)",
@@ -99,7 +109,9 @@
       "amStartArguments": "-n com.miHoYo.Yuanshen.nightly/org.yuzu.yuzu_emu.activities.EmulationActivity\n  -a android.nfc.action.TECH_DISCOVERED\n  -d {file.uri}",
       "killPackageProcesses": false,
       "killPackageProcessesWarning": false,
-      "extra": ""
+      "extra": {
+        "cantResume": true
+      }
     },
     {
       "name": "Yuzu",
