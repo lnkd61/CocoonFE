@@ -233,7 +233,9 @@
       "amStartArguments": "-a app.gamenative.LAUNCH_GAME\n -n app.gamenative/.MainActivity\n --ei app_id {tags.app_id}\n --es game_source {tags.game_source}",
       "killPackageProcesses": false,
       "killPackageProcessesWarning": false,
-      "extra": ""
+      "extra": {
+        "cantResume": true
+      }
     }
   ]
 }
