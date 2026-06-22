@@ -21,8 +21,18 @@
   },
   "playerList": [
     {
-      "name": "Pico8 Wrapper (NaviVani's Fork)",
+      "name": "PICO-8 Android",
       "uniqueId": "pico8.io.wip.pico8",
+      "description": "Supported extensions: p8, png.",
+      "acceptedFilenameRegex": "^(.*)\\.(?:p8|png)$",
+      "amStartArguments": "-n io.wip.pico8/com.godot.game.GodotAppLauncher\n -d {file.uri}",
+      "killPackageProcesses": true,
+      "killPackageProcessesWarning": true,
+      "extra": ""
+    },
+    {
+      "name": "PICO-8 Android (NaviVani's Fork)",
+      "uniqueId": "pico8.io.navivani.pico8",
       "description": "Supported extensions: png.",
       "acceptedFilenameRegex": "^(.*)\\.(?:png)$",
       "amStartArguments": "-n io.wip.pico8/com.godot.game.GodotApp\n -a android.intent.action.VIEW\n -e GAME {file.path}",
