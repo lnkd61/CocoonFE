@@ -828,6 +828,13 @@
       "revisionNumber": 1
     },
     {
+      "filename": "Xbox36-.json",
+      "platformName": "Xbox 360",
+      "platformShortname": "xbox360",
+      "platformUniqueId": "xbox360",
+      "revisionNumber": 1
+    },
+    {
       "filename": "XboxGamePass.json",
       "platformName": "XBox Game Pass",
       "platformShortname": "xcloud",
