@@ -27,6 +27,16 @@
       "killPackageProcesses": true,
       "killPackageProcessesWarning": false,
       "extra": ""
+    },
+    {
+      "name": "xbox - hakuX",
+      "uniqueId": "xbox.com.rfandango.haku_x",
+      "description": "Supported extensions: xiso, iso.",
+      "acceptedFilenameRegex": "^(.*)\\.(?:xiso|iso)$",
+      "amStartArguments": "-n com.rfandango.haku_x/.LauncherActivity\n-d {file.uri}",
+      "killPackageProcesses": false,
+      "killPackageProcessesWarning": true,
+      "extra": ""
     }
   ]
 }
