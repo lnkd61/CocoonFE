@@ -541,6 +541,13 @@
       "revisionNumber": 4
     },
     {
+      "filename": "Ports.json",
+      "platformName": "Ports",
+      "platformShortname": "ports",
+      "platformUniqueId": "ports",
+      "revisionNumber": 1
+    },
+    {
       "filename": "Quake.json",
       "platformName": "Quake Game Engine",
       "platformShortname": "quake",
