@@ -2,9 +2,9 @@
   "databaseVersion": 14,
   "revisionNumber": 1,
   "platform": {
-    "name": "Flash",
-    "uniqueId": "flash",
-    "shortname": "flash",
+    "name": "Adobe Flash",
+    "uniqueId": "adobeflash",
+    "shortname": "adobeflash",
     "description": null,
     "acceptedFilenameRegex": "^(?!(?:\\._|\\.).*).*$",
     "scraperSourceList": [],
