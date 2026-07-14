@@ -254,6 +254,13 @@
       "revisionNumber": 2
     },
     {
+      "filename": "AdobeFlash.json",
+      "platformName": "AdobeFlash",
+      "platformShortname": "adobeflash",
+      "platformUniqueId": "adobeflash",
+      "revisionNumber": 2
+    },
+    {
       "filename": "Game&Watch.json",
       "platformName": "Game & Watch",
       "platformShortname": "gameandwatch",
